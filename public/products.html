@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body onload="getIdUser()">
+  <div id="blackout" onClick='createBasket("none")'></div>
+  <form id='modal'> 
+    <input type='text'>
+  </form>
+  <div class="allContent">
+    <header>
+      <div class="logo">
+        <img src="img/logo.jpg" alt="logo">
+      </div>
+      <div class="phoneComp">
+        Наш телефон: +375 (17) 209-87-00
+      </div>
+      <div class="addressComp">
+        Адрес: г.Минск, ул.Р.Люксембург, 205
+      </div>
+      <div class="basket">
+        <img 
+          src="img/basket.png"
+          alt="basket" 
+          class="imgBasket"
+        >          
+    </div>
+    
+      </div>
+    </header>
+    <main>
+    <div class="categories"> 
+      <ul>
+        <li id="decoration"> <p>Отделочные материалы</p> </li>
+        <li id="metal"> <p>Металлоизделия</p> </li>
+        <li id="ferroconcrete"> <p>ЖБ изделия</p> </li>
+        <li id="concrete"> <p>Бетонные смеси</p> </li>
+        <li id="door"> <p>Двери</p></li>
+        <li id="window"> <p>Окна</p> </li>
+        <li id="heatPoint"> <p>Тепловые пункты</p> </li>
+      </ul>
+    </div>
+    <div class="containerProducts">
+      <div class="infoApp">
+        <div class="infoTitle"></div> 
+        <div class="infoContent">Компания ОАО МАПИД рада Вас приветствовать в нашем интернет-магазине. Вы можете выбрать товары из представленных категорий. Желаем Вам хороших покупок!</div> 
+      </div>
+    </div>
+  </div>
+</main>
+
+  <script src="appCode.js"></script>
+</body>
+</html>

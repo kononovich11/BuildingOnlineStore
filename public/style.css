@@ -5,6 +5,7 @@
 
 body {
   font-family: 'Lato', sans-serif;
+  margin: 0 300px; 
 }
 .content {
   height: 1005px;
@@ -12,7 +13,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 1px solid gold;
-  background-color: #177246;
+  background-color:#005ead
 }
 .form-content {
   height: 400px;
@@ -40,11 +41,11 @@ input {
 }
 .btn-reg {
   width: 120px;
-  background-color: #177246;
+  background-color:#005ead;
   color: #fff;
 }
 input[type=submit] {
-  background-color: #177246;
+  background-color:#005ead;
   color: #fff;
 }
 .header-form {
@@ -67,4 +68,208 @@ input[type=submit] {
 .btn-reg.reg-answer {
   height: 50px;
   margin-top: 100px;
+}
+
+.wrongEnter {
+  border: 1px solid #a11701;
+  background-color: #f2dee0; 
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.logo img, .basket img, .logoAbmin img {
+  height: 100px;
+  width: 100px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="search"] {
+  margin: 30px 0;
+  width: 450px;
+}
+
+footer {
+  border: 1px solid hotpink;
+  height: 200px;
+  margin-top: 500px;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+}
+
+.categories li {
+  border: 1px solid grey;
+  background-color:  #d3d3d3;
+  list-style-type: none;
+  width: 120%;
+  height: 120px;
+  margin-top: 10px;
+}
+
+li p {
+ display: flex;
+ justify-content: center;
+ margin-top: 40px;
+ font-size: 25px;
+}
+
+.categories li:hover {
+  background-color: grey;
+}
+
+.containerProducts {
+  /* border: 1px solid green; */
+  max-width: 950px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.oneProduct {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  height: 250px;
+  margin: 15px;
+}
+
+.imgProduct {
+  width: 100px;
+  height: 100px;
+}
+
+#modal {
+  position: fixed;
+    top: 1rem;
+    right: 0;
+    left: 0;
+    z-index: 150;
+    background: #fff;
+    border-radius: 0.5rem;
+    min-width: 20rem;
+    max-width: 40rem;
+    max-height: 25rem;
+    margin: 0 auto;
+    padding: 1.25rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    display: none;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    padding: 20px;
+}
+
+.modal::-webkit-scrollbar {
+  width: 8px;
+}
+.modal::-webkit-scrollbar-thumb {
+  background: #8f9da6;
+}
+
+#blackout {
+  background-color: #000;
+  opacity: 0.4;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  display: none;
+}
+
+.imgBasket {
+  width: 100px;
+  height: 100px;
+}
+
+.rowProduct {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.crossDel {
+  width: 40px;
+  height: 40px;
+}
+
+#mainTab {
+  margin-top: 30px;
+  font-size: 17px;
+}
+
+#moreTab {
+  display: none;
+  margin: 30px;
+  font-size: 17px;
+}
+
+.contentOrders {
+  display: flex;
+}
+
+.btnMore {
+  margin: 5px 40px;
+  height: 30px;
+}
+
+.logoAbmin {
+display: flex;
+justify-content: space-between;
+}
+
+.logoAbmin button {
+  height: 50px;
+  width: 100px;
+  margin: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.infoTitle {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.infoContent {
+  font-size: 18px;
+}
+
+.btnAdd {
+  height: 40px;
+  width: 100px;
+}
+
+.inputAmount {
+  height: 20px;
+  width: 60px;
+  margin-top: 10px;
+}
+
+#productChoiced, #inputIdUser {
+  display: none;
+}
+
+#inputDelivery, #totalPrice {
+  display: block;
+}
+
+#totalPrice {
+  pointer-events: none;
+}
+
+.btnSendForm {
+  width: 100px;
+  height: 50px;
 }
